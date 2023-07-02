@@ -1,0 +1,7 @@
+add_executable(${PROJECT_NAME} main.cpp)
+target_link_libraries(${PROJECT_NAME} PRIVATE parsing)
+target_link_libraries(${PROJECT_NAME} PRIVATE conversions)
+target_link_libraries(${PROJECT_NAME} PRIVATE frame)
+target_link_libraries(${PROJECT_NAME} PRIVATE id3)
+
+target_include_directories(${PROJECT_NAME} PUBLIC ${PROJECT_SOURCE_DIR})
